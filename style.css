@@ -1,52 +1,43 @@
-
-       /*Font: Roboto*/
+/*Font: Roboto*/
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+}
 
 * {
-    margin: 2px;
-    padding: 2px;
     box-sizing: content-box;
     font-family: 'Roboto';
-
 }
 
 
 
-               /*Background*/
+/*Background*/
 
 
 body {
-        
-
-    
-    min-height: 100vh;
-    background: rgb(44, 62, 80) no-repeat;
+    min-height: 100%;
+    background: rgb(184, 186, 195) no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 
 .header {
-
     display: flex;
     position: fixed;
     width: 100%;
     padding: 0;
-    background: rgb(231, 76, 60);
+    background: rgb(35, 37, 76);
     top: 0;
     left: 0;
     justify-content: space-between;
-   
-    
 }
 
 
-              /*Title*/
+/*Title*/
 
 
 .title {
-    
-    
     font-size: 30px;
     padding: 5px;
     gap: 100px;
@@ -54,92 +45,74 @@ body {
     font-weight: bolder;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: rgb(44, 62, 80);
-    
-   
-   
- }
+    color: rgb(232, 236, 244);
+}
 
 
 
-               /*Nabvar*/
+/*Nabvar*/
 
- nav ul {
-
-    display : flex;
+nav ul {
+    display: flex;
     list-style: none;
-    gap: 25px;px;
+    gap: 20px;
     justify-content: center;
-    align-items: center ;
-    
-
+    align-items: center;
+    padding: 20px;
 }
 
 
 
-        .a {
-  
-           font-size: 15px;
-            color: black;
-            margin-left: 35px;
-            
-        }
+.a {
+    font-size: 15px;
+    color: white;
+}
 
 
-        .a:hover{
-            color: rgb(236, 240, 241);
-        }
+.a:hover {
+    color: rgb(151, 159, 161);
+}
 
 
 
 
 
-            /*Audio*/
+/*Audio*/
 
 
 
-        h5{
+h5 {
     color: black;
+    margin-top: 45px;
 }
 
 
-.audio  {
-    
-
-    width:25% ;
-    
-    
-    
-
+.audio {
+    width: 25%;
 }
 
 
-audio::-webkit-media-controls-panel{
-
-    background-color:  rgb(44, 62, 80);
-    color:  rgb(44, 62, 80);
+audio::-webkit-media-controls-panel {
+    background-color: rgb(184, 186, 195);
+    color: rgb(184, 186, 195);
     border-radius: 15px;
     overflow: hidden;
-
 }
 
 
 audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-mute-button{
-
-
-    background-color:  rgb(44, 62, 80);
+audio::-webkit-media-controls-mute-button {
+    background-color: rgb(184, 186, 195);
     border-radius: 8px;
- 
-
 }
 
+.section-margin {
+    margin-bottom: 50px;
+}
 
-           /*Subtitles*/
-
-
-.subtitle{
-    color:rgb(145, 119, 116);
+/*Subtitles*/
+.subtitle {
+    color: rgb(225, 226, 229);
     text-transform: uppercase;
     text-transform: full-width;
     text-decoration: underline;
@@ -150,14 +123,12 @@ audio::-webkit-media-controls-mute-button{
 
 
 
-        /*About section*/
+/*About section*/
 
 
 #about {
-    
-    height: 100vh;
-    background: linear-gradient(-90deg,rgb(44, 62, 80) 25%, rgb(231, 76, 60) 75%);
-    
+    height: 100%;
+    background: linear-gradient(-90deg, rgb(232, 236, 244) 25%, rgb(35, 37, 76));
 }
 
 
@@ -176,40 +147,36 @@ audio::-webkit-media-controls-mute-button{
 }
 
 
-#about a{
-    color: rgb(145, 119, 116);
+#about a {
+    color: black;
     font-size: 30px;
     font-weight: 300;
 }
 
 #about a:hover {
-    
-    color:rgb(236, 240, 241) ;
-
+    color: rgb(143, 148, 149);
 }
 
 
 
-         /*image*/
+/*image*/
 
-.image{
-
+.image {
     width: 400px;
     height: 400px;
-    background:  rgb(44, 62, 80);
+    background: rgb(232, 236, 244);
     border-radius: 50%;
 }
 
 
 
 
-        /*Video*/
+/*Video*/
 
-.video{
-
-    width: 400px;
-    height:300px;
-    background: rgb(44, 62, 80);
+.video {
+    width: 600px;
+    height: 300px;
+    background: rgb(232, 236, 244);
 }
 
 
@@ -217,87 +184,78 @@ audio::-webkit-media-controls-mute-button{
 
 
 
-       /*Work section*/
+/*Work section*/
 
- 
-       #work {
-    
-        height: 100vh;
-        background: linear-gradient(-90deg,rgb(44, 62, 80) 25%, rgb(231, 76, 60) 75%);
-        
-    } 
-       
-    
-    
-    .business{
-    
-        font-size: 30px;
-        font-weight: 300;
-        color: black;
-        text-align: left;
-    }
-    
 
-    .li {
-        
-        margin-left: 15px;
-        color: rgb(22, 31, 40)
-    
-    }
+#work {
+    height: 100%;
+    background: linear-gradient(-90deg, rgb(232, 236, 244) 25%, rgb(35, 37, 76));
+}
+
+.work-padding {
+    padding-left: 30px;
+}
 
 
 
-    #work a {
+.business {
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+}
 
-    color: rgb(145, 119, 116);
+
+.li {
+    margin-left: 15px;
+    color: rgb(22, 31, 40)
+}
+
+
+
+#work a {
+    color: black;
     font-size: 20px;
     font-weight: 300;
-
-    }
-
-    #work a:hover {
-    
-        color:rgb(236, 240, 241) ;
-
-    }
-
-
-.form{
-
-    max-width: 500px;
-    border: 3px solid black;
-    margin:  2rem auto;
-    padding:  2rem;
-    border-radius: 5px;
-
 }
 
-.form label{
+#work a:hover {
+    color: rgb(151, 159, 161);
+}
 
+
+.form {
+    max-width: 500px;
+    border: 3px solid black;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.form label {
     display: block;
     text-transform: uppercase;
     font-size: 14px;
-   
-    
 }
 
-.form input, textarea, select{
+.form input,
+textarea,
+select {
     display: block;
     width: 100%;
     border: 2px solid;
     border-radius: 5px;
 }
 
-#submit{
+#submit {
     background: rgb(37, 8, 5);
     color: white;
     width: auto;
     text-transform: uppercase;
-
 }
 
-#submit:hover{
-background: rgb(35, 132, 197);
+#submit:hover {
+    background: rgb(35, 132, 197);
 }
 
 
@@ -305,28 +263,24 @@ background: rgb(35, 132, 197);
 
 
 #resume {
-    
     height: 100vh;
-    background: linear-gradient(-90deg,rgb(44, 62, 80) 25%, rgb(231, 76, 60) 75%);
-    
-} 
-
-
-
-
-
-.table{
-    width: 100%;
-    border: 2px solid;
-    
+    background: linear-gradient(-90deg, rgb(232, 236, 244) 25%, rgb(35, 37, 76));
 }
 
 
-.table th{
 
+
+
+.table {
+    width: 100%;
+    border: 2px solid;
+}
+
+
+.table th {
     padding: 15px;
     border: 1px solid;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(184, 186, 195);
     border-spacing: 2px;
 }
 
@@ -336,13 +290,14 @@ background: rgb(35, 132, 197);
 
 
 #contact {
-    
-    height: 100vh;
-    background: linear-gradient(-90deg,rgb(44, 62, 80) 25%, rgb(231, 76, 60) 75%);
-    
-} 
+    height: 100%;
+    background: linear-gradient(-90deg, rgb(232, 236, 244) 25%, rgb(35, 37, 76));
+}
 
+.contact-link {
+    color: black;
+}
 
-
-
- 
+.contact-link:hover {
+    color: rgb(151, 159, 161);
+}
